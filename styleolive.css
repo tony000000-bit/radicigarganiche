@@ -1,0 +1,261 @@
+/* Stile generale della pagina */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #2a2929;
+    padding-top: 110px; /* Spazio per la barra fissa */
+}
+
+/* Stile della Barra Superiore con Sfondo */
+.navbar {
+    background-image: url('vico.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 10px 50px;
+    position: fixed; /* Barra fissa nella parte superiore */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenitore per logo e navigazione */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo e Testo nella Barra */
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo rotondo */
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Titolo accanto al logo */
+.brand-title {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Effetto hover su logo e titolo */
+.logo-text:hover .logo img {
+    transform: scale(1.1);
+}
+
+.logo-text:hover .brand-title {
+    transform: translateX(5px);
+}
+
+/* Menu di Navigazione */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+    color: #ff4b2b;
+}
+
+/* SEZIONE ANIMATA CON IMMAGINE DI SFONDO E CARTE IN PRIMO PIANO */
+.section {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('vico.jpg'); /* Immagine di sfondo */
+    background-size: cover;
+    background-attachment: fixed; /* Parallasse semplice */
+    background-position: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.section::before {
+    content: 'RadiciGarganiche';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay leggero */
+    z-index: -1; /* Overlay dietro le carte */
+}
+
+/* STILE DELLE CARTE IN PRIMO PIANO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2; /* Carte in primo piano */
+    position: relative;
+}
+
+/* Stile delle carte con trasparenza */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco con trasparenza */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease; /* Aggiunge transizione al background */
+}
+
+/* Effetto hover con più trasparenza */
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Aumenta la trasparenza al passaggio del mouse */
+    transform: translateY(-15px) rotate(1deg); /* Effetto hover come sollevamento */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Immagini all'interno delle carte */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Ingrandimento immagine al passaggio del mouse */
+.card:hover img {
+    transform: scale(1.1); /* Ingrandisce leggermente l'immagine */
+}
+
+/* Sezione Storia */
+.storia {
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%); /* Gradiente sfumato tra bianco e grigio chiaro */
+    padding: 10px 40px; /* Spaziatura ampia attorno al testo */
+    max-width: 900px;
+    margin: 20px auto;
+    border-left: 8px solid #ff4b2b; /* Barra decorativa colorata sul lato sinistro */
+    border-radius: 8px; /* Leggera curvatura degli angoli */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombra morbida e diffusa */
+    text-align: left;
+    position: relative; /* Posizionamento relativo per ulteriori decorazioni */
+}
+
+.storia {
+    background-color: #f9f9f9; /* Sfondo leggero */
+    padding: 50px 20px; /* Spaziatura interna */
+    width: 100%; /* La sezione si estende in larghezza */
+    min-height: 50vh; /* Altezza minima del 50% della finestra */
+    box-sizing: border-box; /* Assicura che il padding sia incluso nella larghezza */
+    margin: 0 auto;
+    text-align: left; /* Testo allineato a sinistra */
+}
+
+/* Stile del titolo */
+.storia h2 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stile del testo */
+.storia p {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+
+
+/* Stile delle Carte */
+.card {
+    background-color: rgb(121, 118, 118);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(255, 247, 247, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    font-size: 1rem;
+    color: #f7f4f4;
+    line-height: 1.6;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4b2b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #ff7f50;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
