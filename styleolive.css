@@ -259,3 +259,73 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* MEDIA QUERIES PER DISPOSITIVI MOBILI */
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 3rem;
+    }
+
+    header.hero p {
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+}
+/* Stili generali per schermi grandi (desktop) */
+body {
+    font-size: 16px;
+}
+
+/* Stili per tablet e dispositivi mobili grandi (max-width di 768px) */
+@media (max-width: 768px) {
+    .logo-title-container {
+        flex-direction: column; /* Disporre il logo e il titolo in verticale */
+        align-items: center; /* Centra il contenuto */
+    }
+
+    header.hero h1 {
+        font-size: 2.5rem; /* Riduce la dimensione del titolo */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Visualizza i link di navigazione in colonna */
+        gap: 10px; /* Riduce lo spazio tra i link */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Riduci la dimensione delle colonne */
+        gap: 10px; /* Riduce lo spazio tra le carte */
+    }
+
+    .card {
+        margin: 0 auto; /* Centra le carte */
+    }
+}
+
+/* Stili per smartphone (max-width di 480px) */
+@media (max-width: 480px) {
+    header.hero h1 {
+        font-size: 2rem; /* Ancora più piccolo per schermi più piccoli */
+    }
+
+    .card h3 {
+        font-size: 1.2rem; /* Riduce il testo dei titoli delle carte */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adatta il testo */
+        padding: 0 10px; /* Riduce il padding */
+    }
+
+    .slideshow-container {
+        height: 50vh; /* Riduce l'altezza dello slideshow */
+    }
+}
+
+
