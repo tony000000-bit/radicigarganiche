@@ -453,7 +453,7 @@ body {
     }
 
     .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Riduci la dimensione delle colonne */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Riduci la dimensione delle colonne */
         gap: 10px; /* Riduce lo spazio tra le carte */
     }
 
