@@ -412,21 +412,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-@media (min-width: 1024px) {
-    /* Stili specifici per schermi desktop */
-    body {
-        font-size: 18px; /* Font più grande per desktop */
-    }
 
-    .slideshow-container {
-        height: 60vh; /* Altezza minore dello slideshow su desktop */
-    }
-
-    .card {
-        width: 30%; /* Dimensioni delle carte su desktop */
-        margin: 20px;
-    }
-}
 
 /* MEDIA QUERIES PER DISPOSITIVI MOBILI */
 @media (max-width: 768px) {
