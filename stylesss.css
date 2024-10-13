@@ -482,7 +482,7 @@ body {
     }
 
     .slideshow-container {
-        height: 30vh; /* Riduce l'altezza dello slideshow */
+        height: 80vh; /* Riduce l'altezza dello slideshow */
     }
 }
 
