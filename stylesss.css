@@ -496,7 +496,7 @@ body {
     }
 
     .slideshow-container {
-        height: 50vh; /* Riduce l'altezza dello slideshow */
+        height: 30vh; /* Riduce l'altezza dello slideshow */
     }
 }
 
