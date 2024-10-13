@@ -31,7 +31,7 @@ header.hero {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     z-index: -1; /* Immagini dietro il contenuto */
 }
 .slide {
@@ -415,6 +415,10 @@ footer a:hover {
 
 /* MEDIA QUERIES PER DISPOSITIVI MOBILI */
 @media (max-width: 768px) {
+     .slideshow-container {
+        display: none; /* Nasconde lo slideshow sui dispositivi con una larghezza maggiore */
+    }
+    
     header.hero h1 {
         font-size: 3rem;
     }
