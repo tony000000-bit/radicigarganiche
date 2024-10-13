@@ -298,14 +298,14 @@ header.hero .btn:hover {
 /* SEZIONE DI TESTO ANIMATA PER LE CURIOSITA' */
 .curiosita h4 {
     margin-bottom: 5px;
-    color: #333;
+    color: #d1cccc;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .curiosita p {
     font-size: 0.9rem;
-    color: #333;
+    color: #cecccc;
 }
 
 
@@ -341,7 +341,7 @@ header.hero .btn:hover {
 
 /* STILE DELLE CARTE */
 .card {
-    background-color: rgb(94, 93, 93);
+    background-color: rgb(185, 183, 183);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -369,13 +369,13 @@ header.hero .btn:hover {
     padding: 15px;
     font-size: 1.5rem;
     background-color: #333;
-    color: white;
+    color: rgb(244, 238, 238);
     text-align: center;
 }
 
 .card p {
     padding: 15px;
-    color: #666;
+    color: #1c1c1c;
     font-size: 1rem;
     text-align: center;
 }
@@ -416,7 +416,7 @@ footer a:hover {
 
 /* MEDIA QUERIES PER DISPOSITIVI MOBILI */
 @media (max-width: 768px) {
-     
+    
     }
     
     header.hero h1 {
@@ -434,7 +434,7 @@ footer a:hover {
     .section h2 {
         font-size: 2rem;
     }
-}
+
 /* Stili generali per schermi grandi (desktop) */
 body {
     font-size: 16px;
