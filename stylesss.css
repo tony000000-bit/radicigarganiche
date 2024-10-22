@@ -196,11 +196,38 @@ header.hero .btn:hover {
     display: block;
 }
 
-/* Responsività per dispositivi mobili */
+/* Media Query per dispositivi mobili */
 @media (max-width: 768px) {
     .menu {
+        display: none;
         flex-direction: column;
-        gap: 10px;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu li a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Mostra l'icona hamburger sui dispositivi mobili */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostra il menu quando attivato */
+    .menu.active {
+        display: flex;
     }
 }
 
