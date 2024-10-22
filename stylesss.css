@@ -16,7 +16,7 @@ body {
 /* STILE DELL'HEADER */
 header.hero {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,47 +128,80 @@ header.hero .btn:hover {
     transform: scale(1.2) translateY(-10px); /* Ingrandisce e sposta verso l'alto il logo */
 }
 
-
-/* NAVBAR */
+/* Stile base per la navbar */
 .navbar {
-    background-image: url('olive.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 370px; /* Posiziona il menu a 20px dal fondo dello slide */
+    left: 25%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Colore di sfondo semi-trasparente */
+    padding: 10px 250px;
+    border-radius: 8px;
+    z-index: 10; /* Assicurati che il menu sia visibile sopra lo slideshow */
 }
-
-/* STILE GENERALE DEL CONTAINER */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-/* MENU DI NAVIGAZIONE */
-.main-nav ul {
+.menu {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.main-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.menu li {
+    position: relative;
 }
 
-.main-nav ul li a:hover {
-    color: #ff4b2b;
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Stile del dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Assicurati che il menu sia visibile sopra lo slideshow */
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    width: 100%;
+}
+
+.dropdown-menu a:hover {
+    background-color: #666;
+}
+
+/* Mostra il dropdown quando si passa con il mouse */
+.menu li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsività per dispositivi mobili */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 /* SEZIONE ANIMATA CON IMMAGINE DI SFONDO E CARTE IN PRIMO PIANO */
@@ -257,12 +290,12 @@ header.hero .btn:hover {
 /* Bottone della carta */
 .card .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 40px;
     background-color: #ff4b2b;
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 10px;
     margin: 20px auto;
     transition: background-color 0.3s ease;
 }
@@ -341,7 +374,7 @@ header.hero .btn:hover {
 
 /* STILE DELLE CARTE */
 .card {
-    background-color: rgb(185, 183, 183);
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -361,15 +394,15 @@ header.hero .btn:hover {
 }
 
 .card:hover {
-    transform: translateY(-15px) rotate(1deg);
+    transform: translateY(-15px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
     padding: 15px;
     font-size: 1.5rem;
-    background-color: #333;
-    color: rgb(244, 238, 238);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -382,7 +415,7 @@ header.hero .btn:hover {
 
 .card .btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #000000;
     color: white;
     text-align: center;

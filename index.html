@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RadiciGarganiche</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="stylesss.css">
 </head>
 <body>
@@ -21,58 +22,150 @@
             <div class="slide" style="background-image: url('mare1.jpg');"></div>
             <div class="slide" style="background-image: url('mare3.jpg');"></div>
         </div>
+     
+        
+        
         
         
         <p>Esplora tradizioni, storie, prodotti e innovazione del nostro territorio.</p>
-        <a href="novita.html" class="btn">Scopri di più</a>
     </header>
+     <!-- Navbar con Menu a Tendina -->
+     <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            
+            <!-- Dropdown per Prodotti -->
+            <li class="dropdown">
+                <a href="prodotti.html">Prodotti</a>
+                <ul class="dropdown-menu">
+                    <li><a href="olio.html">Olio d'Oliva</a></li>
+                    <li><a href="vino.html">Vino</a></li>
+                    <li><a href="formaggi.html">Formaggi</a></li>
+                    <li><a href="agrumi.html">Agrumi</a></li>
+                </ul>
+            </li>
 
+            <!-- Dropdown per Produttori Locali -->
+            <li class="dropdown">
+                <a href="produttori.html">Produttori Locali</a>
+                <ul class="dropdown-menu">
+                    <li><a href="vico del gargano.html">Vico del Gargano</a></li>
+                    <li><a href="rodi.html">Rodi Garganico</a></li>
+                    <li><a href="carpino.html">Carpino</a></li>
+                    <li><a href="produttore4.html">Vigna Rossa</a></li>
+                </ul>
+            </li>
+
+            <li><a href="eventi.html">Eventi</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
+           
+           
+           
+           
+            <li class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61566352844830" target="_blank">
+                    <i class="fab fa-facebook-f"></i> <!-- Logo di Facebook -->
+                </a>
+            </li>
+               <li> <a href="https://www.instagram.com/radicigarganiche/" target="_blank">
+                    <i class="fab fa-instagram"></i> <!-- Logo di Instagram -->
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+  <!-- Sezione Novità -->
+  <section class="section">
+    <h2>Ultime Novità</h2>
+    <div class="grid">
+        <!-- Articolo 1 -->
+        <div class="card">
+            <img src="img/evento-folk.jpg" alt="Carpino Folk Festival">
+            <div class="card-content">
+                <h3>Carpino Folk Festival</h3>
+                <p>Scopri tutto sul festival che celebra la musica e le tradizioni di Carpino, un evento imperdibile per conoscere le radici culturali del Gargano.</p>
+                <a href="articolo-carpino.html" class="btn">Leggi di più</a>
+            </div>
+        </div>
+
+        <!-- Articolo 2 -->
+        <div class="card">
+            <img src="img/olio.jpg" alt="Nuova Raccolta dell'Olio">
+            <div class="card-content">
+                <h3>Nuova Raccolta dell'Olio di Oliva</h3>
+                <p>Scopri come i produttori locali stanno affrontando la nuova stagione della raccolta delle olive, utilizzando metodi tramandati di generazione in generazione.</p>
+                <a href="articolo-olio.html" class="btn">Scopri di più</a>
+            </div>
+        </div>
+
+        <!-- Articolo 3 -->
+        <div class="card">
+            <img src="img/fave-carpino.jpg" alt="La Storia delle Fave di Carpino">
+            <div class="card-content">
+                <h3>La Storia delle Fave di Carpino</h3>
+                <p>Un viaggio nella storia delle celebri fave di Carpino, simbolo di autenticità e qualità per la cucina del Gargano.</p>
+                <a href="articolo-fave.html" class="btn">Approfondisci</a>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- Sezione Prodotti -->
     <section id="prodotti" class="section">
-        <h2>GARGANO</h2>
+        <h2>LA NOSTRA MISSIONE</h2>
         <div class="grid">
             <div class="card">
-                <img src="vico.jpg" alt="Olio d'Oliva">
-                <h3>Vico del Gargano</h3>
-                <p>Vico del Gargano: il borgo autentico dove la storia si mescola ai profumi.</p>
-                <a href="vico del gargano.html" class="btn">Esplora</a>
+                <img src="le nostre az.jpg" alt="Olio d'Oliva">
+                <h3>LA NOSTRA MISSIONE</h3>
+                
+                 <p>
+                    Scopri come innovazione e sostenibilità guidano il futuro agricolo del territorio
+                 </p>
+                    
+                
+                
+                
+                <a href="missione.html" class="btn">Esplora</a>
             </div>
             <div class="card">
-                <img src="rodi.jpg" alt="Formaggi locali">
-                <h3>Rodi Garganico</h3>
-                  <p>I nostri formaggi artigianali portano in tavola i sapori autentici del Gargano.</p>
-                <a href="rodi.html" class="btn">Scopri di più</a>
+                <img src="missione.jpg" alt="Formaggi locali">
+                <h3>AZIENDE AGRICOLE</h3>
+                  <p>Ogni settore contribuisce a mantenere viva la qualità del territorio.</p>
+                <a href="aziendegarg.html" class="btn">Scopri di più</a>
             </div>
             <div class="card">
-                <img src="carpino.jpg" alt="Vino del Gargano">
-                <h3>Carpino</h3>
-                  <p>Assapora i nostri vini locali, ricchi di aromi e storia del territorio.</p>
-                <a href="carpino.html" class="btn">Degusta ora</a>
+                <img src="aziendeagr.jpg" alt="Vino del Gargano">
+                <h3>IMPORTANZA</h3>
+                  <p> Scopri come innovazione e sostenibilità guidano il futuro agricolo del territorio</p>
+                <a href="importanzaeco.html" class="btn">Esplora</a>
             </div>
-            <div class="card">
-                <img src="varano.jpg"  alt="Lago di Varano">
-                <h3>Lago di Varano</h3>
-                  <p>assapora </p>
-                <a href="vico del gargano.html" class="btn"> Scopri</a>
-            </div>
+            
         </div>
     </section>
 
     <!-- Sezione Eventi -->
-    <section id="eventi" class="section">
-        <h2>Eventi</h2>
+    <section id="GARGANO" class="section">
+        <h2>GARGANO</h2>
         <div class="grid">
             <div class="card">
-                <img src="varano.jpg" alt="Sagra del Gargano">
-                <h3>Sagra dell'Olio</h3>
-                <p>Unisciti a noi per celebrare l'olio extravergine del Gargano in una festa imperdibile.</p>
-                <a href="eventi.html" class="btn">Scopri l'evento</a>
+                <img src="vico.jpg" alt="Sagra del Gargano">
+                <h3>Vico del Gargano</h3>
+                <p>Scopri i prodotti tipici e le storie dei suoi produttori.<p>
+                    
+                
+                <a href="vico del gargano.html" class="btn">Scopri</a>
             </div>
             <div class="card">
-                <img src="rocce.jpg" alt="Vendemmia">
-                <h3>Festa della Vendemmia</h3>
-                <p>Vieni a conoscere la tradizione della vendemmia e il processo dietro i nostri vini.</p>
-                <a href="eventi.html" class="btn">Partecipa</a>
+                <img src="rodi.jpg" alt="Vendemmia">
+                <h3>Rodi Garganico</h3>
+                <p>Scopri i prodotti tipici e le storie dei suoi produttori.<p> 
+               
+              <a href="rodi.html" class="btn">Scopri</a>
+            </div>
+            <div class="card">
+                <img src="carpino.jpg" alt="Sagra del Gargano">
+                <h3>Carpino</h3>
+                <p>Scopri i prodotti tipici e le storie dei suoi produttori.</p>
+                <a href="carpino.html" class="btn">Scopri</a>
             </div>
         </div>
     </section>
@@ -85,13 +178,13 @@
                 <img src=.jpg" alt="Azienda agricola 1">
                 <h3>Tenuta Verde</h3>
                 <p>Scopri l'agricoltura biologica che rispetta il nostro ecosistema locale.</p>
-                <a href="aziende.html" class="btn">Visita</a>
+                <a href="aziendegarg.html" class="btn">Visita</a>
             </div>
             <div class="card">
                 <img src="img/azienda2.jpg" alt="Azienda agricola 2">
                 <h3>Fattoria del Sole</h3>
                 <p>Un'azienda a conduzione familiare che preserva le tradizioni secolari.</p>
-                <a href="aziende.html" class="btn">Scopri di più</a>
+                <a href="importanzaeco.html" class="btn">Scopri di più</a>
             </div>
         </div>
     </section>
