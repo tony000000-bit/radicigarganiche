@@ -135,7 +135,7 @@ header.hero .btn:hover {
     left: 25%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6); /* Colore di sfondo semi-trasparente */
-    padding: 10px 250px;
+    padding: 10px 350px;
     border-radius: 8px;
     z-index: 10; /* Assicurati che il menu sia visibile sopra lo slideshow */
 }
