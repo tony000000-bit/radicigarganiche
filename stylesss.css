@@ -174,7 +174,40 @@ header.hero .btn:hover {
 .dropdown-menu a:hover {
     background-color: #666;
 }
+.section {
+    position: relative;
+    padding: 60px 20px;
+    background-image: url('varano.jpg'); /* Immagine di sfondo */
+    background-size: cover;
+    background-attachment: fixed; /* Parallasse semplice */
+    background-position: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    z-index: 1;
+}
 
+.section::before {
+    content: 'RadiciGarganiche';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay leggero */
+    z-index: -1; /* Overlay dietro le carte */
+}
+
+/* STILE DELLE CARTE IN PRIMO PIANO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2; /* Carte in primo piano */
+    position: relative;
+}
 /* CARTE */
 .grid {
     display: grid;
