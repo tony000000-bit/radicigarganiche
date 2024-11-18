@@ -5,7 +5,7 @@
     text-align: center;
     padding: 50px 0;
 }
-* Logo e Testo nella Barra */
+/* Logo e Testo nella Barra */
 .logo-text {
     display: flex;
     align-items: center;
