@@ -418,28 +418,28 @@ html, body {
         max-width: 1200px;
         margin: 0 auto;
     }
-    @media (max-width: 768px) {
-        .menu {
-            display: none;
-            flex-direction: column;
-            background: black;
-            position: absolute;
-            top: 50px;
-            left: 0;
-            width: 100%;
-            text-align: center;
-            padding: 10px 0;
-        }
     
-        .menu.active {
-            display: flex;
-        }
-    
-        .menu li {
-            width: 100%;
-            padding: 10px 0;
-        }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
-}   
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu li {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+   
 
 
