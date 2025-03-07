@@ -1,0 +1,114 @@
+* STILE GENERALE */
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #565555;
+    color: #090909;
+    line-height: 2;
+}
+/* Stile per il logo */
+.logo img {
+    width: 150px; /* Regola la larghezza del logo */
+    height: auto; /* Mantiene le proporzioni */
+    border-radius: 50%; /* Se vuoi che il logo sia rotondo */
+    object-fit: cover; /* Fa sì che l'immagine si adatti bene all'interno del cerchio */
+}
+/* Stile dell'header */
+header.hero {
+    background-image: url('le\ nostre\ az.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Stile della pagina */
+.page-content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-content h2 {
+    text-align: center;
+    color: #000000;
+}
+
+.page-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.page-content h3 {
+    margin-top: 30px;
+    color: #444;
+}
+/* Bottone della carta */
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4b2b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #ff7f50;
+}
+/* Immagine a schermo intero */
+.hero-image {
+    margin: 40px 0;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

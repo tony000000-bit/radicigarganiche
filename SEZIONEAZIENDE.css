@@ -1,0 +1,240 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILE GENERALE */
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #2a2929;
+    color: white;
+    line-height: 1.8;
+}
+
+/* HEADER */
+.hero {
+    background: url('gargano.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* SEZIONE INTRO */
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: #333;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #7cff6b;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* SEZIONE PRODOTTI */
+.prodotti {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.prodotti h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff7f50;
+}
+
+/* GRIGLIA PRODOTTI */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CARD PRODOTTO */
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 250px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILE GENERALE */
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #2a2929;
+    color: white;
+    line-height: 1.8;
+}
+
+/* HERO CON SFONDO */
+.hero {
+    background: url('mare1.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    color: rgb(80, 183, 107);
+}
+
+.hero p {
+    font-size: 1.6rem;
+}
+
+/* INTRO SPAZIO A DESTRA */
+.intro {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.intro-text {
+    max-width: 1100px;
+}
+.intro-text h2 {
+    font-size: 3rem;
+}
+.intro-text p  {
+    font-size: 1.5rem;
+}      
+/* SEZIONE PRODOTTI - NUOVO STILE */
+.prodotti {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.prodotti h2 {
+    font-size: 2rem;
+    color: #ff7f50;
+    margin-bottom: 20px;
+}
+
+/* STRUTTURA PRODOTTI */
+.prodotti-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* STILE PRODOTTO */
+.prodotto {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+    max-width: 900px;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+.prodotto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.prodotto-info {
+    flex: 2;
+    text-align: left;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ff9800;
+}
+
+/* SEZIONI TRADIZIONE E TURISMO */
+.tradizione, .turismo {
+    text-align: center;
+    padding: 50px;
+    background: #333;
+}
+
+.tradizione h2, .turismo h2 {
+    font-size: 2rem;
+    color: #7cff6b;
+}

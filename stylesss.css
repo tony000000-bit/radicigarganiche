@@ -1,0 +1,317 @@
+
+
+/* SEZIONE ANIMATA CON IMMAGINE DI SFONDO E CARTE IN PRIMO PIANO */
+.section {
+    position: relative;
+    padding: 60px 20px;
+    background: color(srgb rgb(51, 50, 50) rgb(32, 33, 32) rgb(33, 33, 33)); /* Immagine di sfondo */
+    background-size: cover;
+    background-attachment: fixed; /* Parallasse semplice */
+    background-position: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.section::before {
+    content: 'RadiciGarganiche';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay leggero */
+    z-index: -1; /* Overlay dietro le carte */
+}
+
+/* STILE DELLE CARTE IN PRIMO PIANO */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 2; /* Carte in primo piano */
+    position: relative;
+}
+
+/* Stile delle carte con trasparenza */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco con trasparenza */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease; /* Aggiunge transizione al background */
+}
+
+/* Effetto hover con più trasparenza */
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Aumenta la trasparenza al passaggio del mouse */
+    transform: translateY(-15px) rotate(1deg); /* Effetto hover come sollevamento */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Immagini all'interno delle carte */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Ingrandimento immagine al passaggio del mouse */
+.card:hover img {
+    transform: scale(1.1); /* Ingrandisce leggermente l'immagine */
+}
+
+/* Titolo della carta */
+.card h3 {
+    padding: 15px;
+    font-size: 1.8rem;
+    background-color: rgba(51, 51, 51, 0.9); /* Sfondo leggermente trasparente per il titolo */
+    color: white;
+    text-align: center;
+}
+
+/* Testo della carta */
+.card p {
+    padding: 15px;
+    color:#fbfafa;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Bottone della carta */
+.card .btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #ff4b2b;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #ff7f50;
+}
+
+
+/* PICCOLE CURIOSITA' ANIMATE (TOOLTIPS) */
+.curiosita {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+    background-color: #ffdd57;
+    color: #333;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.card:hover .curiosita {
+    opacity: 1; /* Mostra la curiosità al passaggio del mouse */
+    pointer-events: all;
+}
+
+/* SEZIONE DI TESTO ANIMATA PER LE CURIOSITA' */
+.curiosita h4 {
+    margin-bottom: 5px;
+    color: #d1cccc;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.curiosita p {
+    font-size: 0.9rem;
+    color: #cecccc;
+}
+
+
+/* GRIGLIA ASIMMETRICA PER LE CARTE */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 230px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid .card:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid .card:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid .card:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid .card:nth-child(4) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* STILE DELLE CARTE */
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.card p {
+    padding: 15px;
+    color: #1c1c1c;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #ff7f50;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* MEDIA QUERIES PER DISPOSITIVI MOBILI */
+@media (max-width: 768px) {
+    
+    }
+    
+    header.hero h1 {
+        font-size: 3rem;
+    }
+
+    header.hero p {
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+/* Stili generali per schermi grandi (desktop) */
+body {
+    font-size: 16px;
+}
+
+/* Stili per tablet e dispositivi mobili grandi (max-width di 768px) */
+@media (max-width: 768px) {
+    .logo-title-container {
+        flex-direction: column; /* Disporre il logo e il titolo in verticale */
+        align-items: center; /* Centra il contenuto */
+    }
+
+    header.hero h1 {
+        font-size: 2.5rem; /* Riduce la dimensione del titolo */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Visualizza i link di navigazione in colonna */
+        gap: 10px; /* Riduce lo spazio tra i link */
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Riduci la dimensione delle colonne */
+        gap: 10px; /* Riduce lo spazio tra le carte */
+    }
+
+    .card {
+        margin: 0 auto; /* Centra le carte */
+    }
+}
+
+/* Stili per smartphone (max-width di 480px) */
+@media (max-width: 480px) {
+    header.hero h1 {
+        font-size: 2rem; /* Ancora più piccolo per schermi più piccoli */
+    }
+
+    .card h3 {
+        font-size: 1.2rem; /* Riduce il testo dei titoli delle carte */
+    }
+
+    .hero-text p {
+        font-size: 1rem; /* Adatta il testo */
+        padding: 0 10px; /* Riduce il padding */
+    }
+
+    .slideshow-container {
+        height: 80vh; /* Riduce l'altezza dello slideshow */
+    }
+}
+

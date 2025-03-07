@@ -1,0 +1,283 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 50vh;
+    background: url('hero-tremiti.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 800px;
+}
+
+/* SEZIONE COME ARRIVARE */
+.come-arrivare {
+    text-align: center;
+    padding: 80px 20px;
+    background: #222;
+    color: white;
+}
+
+.come-arrivare h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00BFFF; /* Blu mare */
+}
+
+.come-arrivare p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.come-arrivare ul {
+    list-style-type: square;
+    padding-left: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.come-arrivare li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* SEZIONE COSA FARE */
+.cosa-fare {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.cosa-fare h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700; /* Giallo oro */
+}
+
+.cosa-fare p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 30px;
+}
+
+.cosa-fare ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cosa-fare li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* SEZIONE LE ISOLE */
+.le-isole {
+    text-align: center;
+    padding: 80px 20px;
+    background: #2c6e49; /* Verde scuro naturale */
+    color: white;
+}
+
+.le-isole h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD700; /* Giallo tenue */
+}
+
+.le-isole p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.le-isole ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.le-isole li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* SEZIONE DOVE MANGIARE & DORMIRE */
+.ristoro {
+    text-align: center;
+    padding: 80px 20px;
+    background: #222;
+    color: white;
+}
+
+.ristoro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ristoro p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ristoro-item {
+    width: 300px;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ristoro-item:hover {
+    transform: scale(1.05);
+}
+
+.ristoro-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ristoro-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.ristoro-item p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* SEZIONE MAPPA INTERATTIVA */
+.mappa {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.mappa h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mappa p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p, .come-arrivare p, .cosa-fare p, .le-isole p, .mappa p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,255 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: #F4A261;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url('missione.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 900px;
+}
+
+/* SEZIONI GENERALI */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* ANIMAZIONE DI ENTRATA */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* STILE DEI TITOLI */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2A9D8F;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #E76F51;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* INTRODUZIONE */
+.introduzione {
+    background: #F4F4F4;
+    color: #333;
+}
+
+.introduzione p {
+    font-size: 1.3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* IL PERCORSO */
+.percorso {
+    background: #264653;
+    color: white;
+}
+
+.percorso ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.percorso li {
+    font-size: 1.2rem;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* FLORA E FAUNA */
+.flora-fauna {
+    background: #E9C46A;
+    color: black;
+}
+
+.flora-fauna ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flora-fauna li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* COSA FARE */
+.cosa-fare {
+    background: #2A9D8F;
+    color: white;
+}
+
+/* DOVE MANGIARE & DORMIRE */
+.ristoro {
+    background: #E76F51;
+    color: white;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ristoro-item {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ristoro-item:hover {
+    transform: scale(1.05);
+}
+
+.ristoro-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.ristoro-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.ristoro-item p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* MAPPA */
+.mappa {
+    background: #264653;
+    color: white;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p, .introduzione p, .percorso p, .flora-fauna p, .cosa-fare p, .mappa p {
+        font-size: 1.1rem;
+        padding: 0 10px;
+    }
+}

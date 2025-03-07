@@ -1,0 +1,182 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #111;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: url('mare.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 7rem;
+    color: #0b0b0b;
+    margin-top: 200px;
+}
+
+.hero-content p {
+    font-size: 3rem;
+    color: #0b0b0b;
+}
+
+/* INTRODUZIONE */
+.intro {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+}
+
+/* SEZIONE ITINERARI */
+.itinerari {
+    padding: 50px;
+    background: #0b0b0b;
+}
+.container p {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.container h2{
+    font-size: 4rem;
+    color: #ffffff;
+}
+.itinerario {
+    display: flex;
+    gap: 20px;
+    background: rgb(62, 61, 61);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.itinerario img {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.itinerario-info p {
+    font-size: 1rem;
+    color: #ffffff;
+}    
+.itinerario-info {
+    flex: 1;
+}
+
+.itinerario-info h3 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #a37720;
+}
+
+/* SEZIONE EVIDENZA */
+.evidenza {
+    height: 50vh;
+    background: url('missione.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.evidenza:hover {
+    background-size: 105%;
+    transition: background-size 0.5s ease-in-out;
+}
+
+/* SEZIONE PAESI */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.food-item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.food-item img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+

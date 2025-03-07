@@ -1,0 +1,210 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #2a2929;
+    color: white;
+    padding-top: 110px; /* Spazio per la navbar */
+}
+
+/* ✅ NAVBAR - Correzione conflitti e miglioramenti */
+.navbar {
+    background: #333;
+    padding: 15px 50px;
+    position: fixed; /* Mantiene la navbar in alto */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Contenitore Logo e Social */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ✅ LOGO - Piccolo e rotondo */
+.logo-section img {
+    width: 60px; /* Logo più piccolo */
+    height: 60px;
+    border-radius: 50%; /* Forma rotonda */
+    object-fit: cover; /* Evita distorsioni */
+    display: block;
+}
+
+/* ✅ Social Icons */
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #c5942c;
+}
+
+/* ✅ Menu di Navigazione */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ff4b2b;
+}
+
+/* ✅ HERO SECTION - Correzione immagine sfondo */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('valledoro.jpg.png') no-repeat center center/cover; /* Nome corretto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+}
+
+/* ✅ Bottone Hero */
+.hero-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.hero-text .btn:hover {
+    background: #a37f1e;
+}
+
+/* ✅ SEZIONE HOTEL */
+.hotel-description {
+    text-align: center;
+    padding: 50px;
+    background: #302f2f;
+    color: #f8efef;
+}
+
+/* ✅ SERVIZI */
+.services {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: rgb(59, 58, 58);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(247, 245, 245);
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ TESTIMONIANZE */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: #383434;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ MAPPA */
+.map {
+    text-align: center;
+    padding: 40px;
+    background: #222;
+}
+/* SEZIONE CIBO */
+.food-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+    color: white;
+}
+
+/* CONTAINER PER LE IMMAGINI */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* IMMAGINI CIRCOLARI */
+.food-item img {
+    width: 300px; /* Regola la dimensione */
+    height: 300px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item img:hover {
+    transform: scale(1.05);
+}
+
+/* TESTO SOTTO LE IMMAGINI */
+h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+}

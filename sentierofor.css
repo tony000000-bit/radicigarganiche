@@ -1,0 +1,488 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-register {
+    background: gold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Sfondo dinamico */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('aziendeagr.jpg') no-repeat center center/cover; /* Sostituisci con la tua immagine */
+}
+
+
+/* Effetto scorrimento immagini */
+@keyframes changeBackground {
+    0% { background-image: url('mare.jpg'); }
+    33% { background-image: url('mare1.jpg'); }
+    66% { background-image: url('mare3.jpg'); }
+    100% { background-image: url('missione.jpg'); } /* Torna alla prima immagine */
+}
+
+/* Testo in primo piano */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('aziendeagr.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    
+}
+.hero-content h1 {
+    font-size: 9rem;
+    color: #000;;
+} 
+.hero-content p {
+    font-size: 3rem;
+    color: #000;
+}       
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 20px;
+    width: 700px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Contenitore della navbar */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;  /* Regola la dimensione del logo */
+    height: auto;
+}
+
+/* Menu */
+.menu-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Pulsanti di autenticazione */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register {
+    background-color: #c5942c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #a67c00;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;  /* Regola la dimensione del logo */
+    height: 80px;
+    border-radius: 50%;  /* Rende il logo rotondo */
+    object-fit: cover;  /* Mantiene le proporzioni senza distorsioni */
+    transition: transform 0.3s ease-in-out;  /* Aggiunge un'animazione fluida */
+}
+
+/* Effetto hover: il logo si ingrandisce leggermente */
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar .logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+/* HERO SECTION */
+.hero {
+    height: 50vh;
+    background: url('aziendeagr.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 800px;
+}
+
+/* SEZIONE FORESTA */
+.foresta {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.foresta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+
+.foresta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Distanza tra gli elementi */
+    padding: 20px;
+}
+
+.foresta-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Dimensione uniforme */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foresta-item:hover {
+    transform: scale(1.05); /* Effetto zoom al passaggio del mouse */
+}
+
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.foresta-item {
+    width: 220px;
+    text-align: center;
+}
+
+.foresta-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.foresta-item:hover img {
+    transform: scale(1.05);
+}
+
+.foresta-item p {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/* BOTTONE */
+.button-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.btn {
+    display: inline-block;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #388E3C;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+/* SEZIONE DOVE MANGIARE & DORMIRE */
+.ristoro {
+    text-align: center;
+    padding: 80px 20px;
+    background: #222;
+    color: white;
+}
+
+.ristoro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.ristoro p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.ristoro-item {
+    width: 220px;
+    text-align: center;
+}
+.ristoro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Aggiunge spazio tra gli item */
+    padding: 20px;
+}
+
+.ristoro-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px; /* Larghezza fissa per uniformità */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ristoro-item:hover {
+    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+.ristoro-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ristoro-item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.ristoro-item p {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+/* SEZIONE MAPPA INTERATTIVA */
+.mappa {
+    text-align: center;
+    padding: 80px 20px;
+    background: #111;
+    color: white;
+}
+
+.mappa h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mappa p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+.foresta-info {
+    background-color: #a09a9a;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    line-height: 1.8;
+    color: #a09a9a;
+}
+
+.foresta-info h2 {
+    font-size: 3rem;
+    color: #0e0e0e; /* Colore caldo per i titoli */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.foresta-info p {
+    font-size: 2rem;
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.foresta-info ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.foresta-info li {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+

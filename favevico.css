@@ -1,0 +1,137 @@
+/* Stile dell'header */
+.hero {
+    background-color: #8bc34a;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+/* Logo e Testo nella Barra */
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo rotondo */
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Titolo accanto al logo */
+.brand-title {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Effetto hover su logo e titolo */
+.logo-text:hover .logo img {
+    transform: scale(1.1);
+}
+
+.logo-text:hover .brand-title {
+    transform: translateX(5px);
+}
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Stile della sezione introduzione */
+.intro {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #faf3f3;
+}
+
+/* Stile della sezione varietà di fave */
+.varieta-fave {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.varieta-fave h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+}
+
+.card p {
+    padding: 15px;
+    color: #666;
+}
+
+/* Stile della sezione importanza */
+.importanza {
+    padding: 40px 20px;
+    background-color: #e0e0e0;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Stile immagine campi di fave */
+.hero-image {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Stile del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

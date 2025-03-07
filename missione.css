@@ -1,0 +1,595 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILE GENERALE */
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #565555;
+    color: #ffffff;
+    line-height: 2;
+}
+
+/* STILE DELL'HEADER */
+header.hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(252, 249, 249);
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Immagini dietro il contenuto */
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* STILE DEL TESTO HERO */
+header.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    background: linear-gradient(45deg, #fffdfd, #f6f3f3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    margin-top: -10px;
+    display: inline-block;
+}
+
+header.hero h1:hover {
+    transform: scale(1.1);
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header.hero p:hover {
+    background: rgba(1, 1, 1, 0.2);
+    transform: scale(1.05);
+}
+
+header.hero .btn {
+    background-color: #080808;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header.hero .btn:hover {
+    background-color: #ff7f50;
+}
+/* Container flessibile per logo e testo (allineamento orizzontale) */
+.logo-title-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente il logo e il titolo */
+    justify-content: flex-start; /* Allinea logo e testo all'inizio */
+    gap: 40px; /* Spazio tra il logo e il titolo */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo-title-container .logo img {
+    width: 150px; /* Dimensione del logo */
+    height: 150px;
+    border-radius: 50%; /* Rende il logo rotondo */
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Aggiunge una transizione fluida */
+}
+
+.logo-title-container h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* Gradiente per il titolo */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+/* Logo hover: ingrandimento e spostamento */
+.logo-title-container .logo img:hover {
+    transform: scale(1.2) translateY(-10px); /* Ingrandisce e sposta verso l'alto il logo */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 10px;
+    position: absolute;
+    top: -200px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10
+}
+
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Stile per il Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Stile per le icone social */
+.social-icons i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Menu Icon for Mobile */
+.menu-icon {
+    display: none; /* Nascosto su desktop */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .menu li {
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+
+    .menu li a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Mostra l'icona hamburger sui dispositivi mobili */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostra il menu quando attivato */
+    .menu.active {
+        display: flex;
+    }
+}
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c5942c;
+    padding: 15px 30px;
+}
+
+.logo-section img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.hero-text {
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* SEZIONI */
+.mission, .gargano {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+.food-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #222;
+    color: white;
+}
+
+/* CONTAINER PER LE IMMAGINI */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* IMMAGINI CIRCOLARI */
+.food-item img {
+    width: 300px; /* Regola la dimensione */
+    height: 300px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item img:hover {
+    transform: scale(1.05);
+}
+/* IMMAGINI CIRCOLARI */
+.food-item1 img {
+    width: 500px; /* Regola la dimensione */
+    height: 500px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item1 img:hover {
+    transform: scale(1.05);
+}
+/* TESTO SOTTO LE IMMAGINI */
+h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+}
+/* ✅ SEZIONE OPPORTUNITÀ */
+.opportunities {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* ✅ HEADER CON SFONDO NERO E ANGOLO TAGLIATO */
+.opportunities-header {
+    background: black;
+    padding: 20px 30px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.opportunities-header h2 {
+    font-size: 2rem;
+}
+
+.opportunities-header p {
+    font-size: 1.2rem;
+    color: #ffc107;
+}
+
+/* ✅ CONTAINER PER LE CARD CON SCROLL ORIZZONTALE */
+.opportunities-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scrollbar-width: none; /* Nasconde lo scroll su Firefox */
+}
+
+.opportunities-container::-webkit-scrollbar {
+    display: none; /* Nasconde lo scroll su Chrome/Safari */
+}
+
+/* ✅ STILE DELLE CARD */
+.opportunity-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ TAG GIALLO */
+.tag {
+    display: inline-block;
+    background: none;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ DATA */
+.date {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* ✅ TESTO DELLA CARD */
+.opportunity-card h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* ✅ PULSANTE "TUTTE LE OPPORTUNITÀ" */
+.opportunities-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #ffc107;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff9800;
+}
+
+
+/* Responsività */
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 2.5rem;
+    }
+
+    header.hero p {
+        font-size: 1.2rem;
+    }
+
+    .vision h2, .values h2, .goals h2, .future-initiatives h2 {
+        font-size: 2rem;
+    }
+
+    .value-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .value-item p {
+        font-size: 0.9rem;
+    }
+}
+/* ✅ SEZIONE MISSIONE */
+.mission {
+    padding: 80px 10%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* ✅ TITOLO PRINCIPALE */
+.mission-title {
+    font-size: 3rem;
+    font-weight: bold;
+    opacity: 0.1; /* Effetto sfocato */
+    text-transform: uppercase;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50px;
+}
+
+/* ✅ SOTTOTITOLO */
+.mission-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+/* ✅ CONTAINER PER LE BOX */
+.mission-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Due colonne */
+    gap: 30px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/* ✅ BOX INDIVIDUALI */
+.mission-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ✅ EFFETTO HOVER */
+.mission-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ TITOLI DEI BOX */
+.mission-box h3 {
+    font-size: 1.8rem;
+    color: #7cff6b; /* Verde per evidenziare */
+    margin-bottom: 10px;
+}
+
+/* ✅ TESTO DEI BOX */
+.mission-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+

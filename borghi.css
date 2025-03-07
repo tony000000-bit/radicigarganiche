@@ -1,0 +1,397 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-buttons .btn-login,
+.auth-buttons .btn-register {
+    background: gold;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Sfondo dinamico */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('missione.jpg') no-repeat center center/cover; /* Sostituisci con la tua immagine */
+}
+
+
+/* Effetto scorrimento immagini */
+@keyframes changeBackground {
+    0% { background-image: url('mare.jpg'); }
+    33% { background-image: url('mare1.jpg'); }
+    66% { background-image: url('mare3.jpg'); }
+    100% { background-image: url('missione.jpg'); } /* Torna alla prima immagine */
+}
+
+/* Testo in primo piano */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('missione.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    
+}
+.hero-content h1 {
+    font-size: 9rem;
+    color: #000;;
+} 
+.hero-content p {
+    font-size: 3rem;
+    color: #000;
+}       
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    padding: 20px;
+    width: 700px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 20px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+}
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Contenitore della navbar */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+ .container h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+.container p {
+    font-size: 2rem;
+    color: #ffffff;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;  /* Regola la dimensione del logo */
+    height: auto;
+}
+
+/* Menu */
+.menu-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Pulsanti di autenticazione */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register {
+    background-color: #c5942c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background-color: #a67c00;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;  /* Regola la dimensione del logo */
+    height: 80px;
+    border-radius: 50%;  /* Rende il logo rotondo */
+    object-fit: cover;  /* Mantiene le proporzioni senza distorsioni */
+    transition: transform 0.3s ease-in-out;  /* Aggiunge un'animazione fluida */
+}
+
+/* Effetto hover: il logo si ingrandisce leggermente */
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Sezioni */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: #1e1c1c;
+    
+}
+.vacanze h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+.card p {
+    font-size: 2rem;
+    color: #ffffff;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ff9800;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card img, .paese img, .news-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Sezione Evidenza */
+.evidenza {
+    width: 100%;
+    height: 60vh; /* Almeno il 60% dello schermo */
+    background: url('mare.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Effetto Hover Zoom sul Background */
+.evidenza:hover {
+    background-size: 110%; /* Effetto Zoom */
+    transition: background-size 0.5s ease-in-out;
+}
+/* CONTAINER PER LE IMMAGINI */
+.food-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+/* IMMAGINI CIRCOLARI */
+.food-item img {
+    width: 300px; /* Regola la dimensione */
+    height: 300px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item img:hover {
+    transform: scale(1.05);
+}
+
+.food-item p {
+    font-size: 2rem;
+    color: #ffffff;
+}    
+.paesi h2 {
+    font-size: 3rem;
+    color: #ffffff;
+}   
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 100px;
+    color: white;
+}
+.overlay h2 {
+    font-size: 5rem;
+    color: #ffffff;
+}    
+.overlay p {
+    font-size: 2rem;
+    color: #ffffff;
+}    
+/* Footer */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* Effetto Hover sulle Immagini */
+.card img, .paese img, .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px; /* Arrotonda gli angoli */
+    transition: transform 0.3s ease-in-out; /* Animazione fluida */
+}
+
+.card img:hover, .paese img:hover, .news-card img:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine */
+}
+
+/* Sezione Evidenza - Effetto Hover */
+.evidenza {
+    height: 50vh;
+    background: url('missione.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.evidenza:hover {
+    background-size: 105%; /* Effetto di zoom al passaggio del mouse */
+    transition: background-size 0.5s ease-in-out;
+}
+
+/* Effetto Ombra sulle Immagini */
+.card img, .paese img, .news-card img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card img:hover, .paese img:hover, .news-card img:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+.borgo img {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.borgo-info {
+    flex: 1;
+}
+
+.borgo-info h3 {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #a37720;
+}

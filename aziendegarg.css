@@ -1,0 +1,362 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STILE GENERALE */
+body {
+    font-family: 'Playfair Display', sans-serif;
+    background-image: #565555;
+    color: white;
+    line-height: 1;
+}
+
+/* HEADER */
+.hero {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(252, 249, 249);
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 80px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero h1:hover {
+    transform: scale(1.1);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #080808;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff7f50;
+}
+
+/* LOGO */
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo-title-container .logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-title-container h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* SEZIONE AZIENDE AGRICOLE */
+.settori-agricoli {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgb(48, 47, 47);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(251, 246, 246);
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card a {
+    display: block;
+    background: #c5942c;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card a:hover {
+    background: #ff9800;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+/* IMMAGINI CIRCOLARI */
+.food-item img {
+    width: 300px; /* Regola la dimensione */
+    height: 300px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item img:hover {
+    transform: scale(1.05);
+}
+/* IMMAGINI CIRCOLARI */
+.food-item1 img {
+    width: 500px; /* Regola la dimensione */
+    height: 500px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item1 img:hover {
+    transform: scale(1.05);
+}
+/* TESTO SOTTO LE IMMAGINI */
+h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+}
+/* ✅ SEZIONE OPPORTUNITÀ */
+.opportunities {
+    background: url('background.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* ✅ HEADER CON SFONDO NERO E ANGOLO TAGLIATO */
+.opportunities-header {
+    background: black;
+    padding: 20px 30px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.opportunities-header h2 {
+    font-size: 2rem;
+}
+
+.opportunities-header p {
+    font-size: 1.2rem;
+    color: #ffc107;
+}
+
+/* ✅ CONTAINER PER LE CARD CON SCROLL ORIZZONTALE */
+.opportunities-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scrollbar-width: none; /* Nasconde lo scroll su Firefox */
+}
+
+.opportunities-container::-webkit-scrollbar {
+    display: none; /* Nasconde lo scroll su Chrome/Safari */
+}
+
+/* ✅ STILE DELLE CARD */
+.opportunity-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ TAG GIALLO */
+.tag {
+    display: inline-block;
+    background: none;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+/* ✅ DATA */
+.date {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* ✅ TESTO DELLA CARD */
+.opportunity-card h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/* ✅ PULSANTE "TUTTE LE OPPORTUNITÀ" */
+.opportunities-footer {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #ffc107;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff9800;
+}
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+/* IMMAGINI CIRCOLARI */
+.food-item1 img {
+    width: 300px; /* Regola la dimensione */
+    height: 300px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item1 img:hover {
+    transform: scale(1.05);
+}
+/* IMMAGINI CIRCOLARI */
+.food-item1 img {
+    width: 500px; /* Regola la dimensione */
+    height: 500px;
+    border-radius: 50%; /* Rende l'immagine rotonda */
+    object-fit: cover; /* Mantiene le proporzioni */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* EFFETTO ZOOM AL PASSAGGIO DEL MOUSE */
+.food-item1 img:hover {
+    transform: scale(1.05);
+}
+/* TESTO SOTTO LE IMMAGINI */
+h3 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 10px auto;
+}
