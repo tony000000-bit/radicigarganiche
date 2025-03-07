@@ -375,7 +375,7 @@ html, body {
 /* Rendi il testo più piccolo su schermi piccoli */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 0.8rem;  /* Riduce il titolo */
+        font-size: 1rem;  /* Riduce il titolo */
         text-align: center;
     }
     

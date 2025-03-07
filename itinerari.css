@@ -177,6 +177,92 @@
     color: white;
     text-align: center;
     padding: 20px;
+}/* Rendi il testo più piccolo su schermi piccoli */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1rem;  /* Riduce il titolo */
+        text-align: center;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adatta le immagini */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block
+        margin: 0 auto;
+    }
+    
+    /* Sezione con problemi di layout */
+    .section {
+        padding: 30px 10px;
+    }
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .menu.active {
+        display: flex;
+    }
+    
+    .menu li {
+        width: 100%;
+        padding: 10px 0;
+    }
+    @media (max-width: 768px) {
+        .grid, .food-container, .ristoro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra gli elementi */
+            gap: 20px; /* Distanza tra gli elementi */
+        }
+    
+        .grid .card, 
+        .food-container .food-item, 
+        .ristoro-container .ristoro-item {
+            width: 90%; /* Occupa quasi tutto lo schermo su mobile */
+            max-width: 400px; /* Non troppo larga */
+        }
+    }    
 }
+   
+
+
+
 
 
