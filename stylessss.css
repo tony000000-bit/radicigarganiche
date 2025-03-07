@@ -359,3 +359,11 @@ section {
 .card img:hover, .paese img:hover, .news-card img:hover {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
