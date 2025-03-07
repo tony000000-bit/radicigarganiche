@@ -359,11 +359,53 @@ section {
 .card img:hover, .paese img:hover, .news-card img:hover {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
 }
+/* Evita lo scroll orizzontale su mobile */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Adatta le sezioni alla larghezza dello schermo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Rendi il testo più piccolo su schermi piccoli */
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem;  /* Riduce il titolo */
+        text-align: center;
     }
+    
     .hero p {
         font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adatta le immagini */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Sezione con problemi di layout */
+    .section {
+        padding: 30px 10px;
     }
 }
+
+
