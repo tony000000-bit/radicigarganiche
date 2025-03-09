@@ -242,7 +242,7 @@
 /* HERO SECTION */
 .hero {
     height: 50vh;
-    background: url('mare.jpg') no-repeat center center/cover;
+    background: url('img/costaegrotte.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
