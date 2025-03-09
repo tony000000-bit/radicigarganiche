@@ -1,261 +1,272 @@
-/* Stile generale della pagina */
-body {
+/* RESET GENERALE */
+* {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    background-color: #2a2929;
-    padding-top: 110px; /* Spazio per la barra fissa */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Stile della Barra Superiore con Sfondo */
+/* NAVBAR */
 .navbar {
-    background-image: url('olive.jpg'); 
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 10px 50px;
-    position: fixed; /* Barra fissa nella parte superiore */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Contenitore per logo e navigazione */
-.container {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Logo e Testo nella Barra */
-.logo-text {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-/* Logo rotondo */
-.logo img {
-    width: 50px;
-    height: 50px;
+.logo {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* Titolo accanto al logo */
-.brand-title {
-    font-size: 1.8rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-/* Effetto hover su logo e titolo */
-.logo-text:hover .logo img {
+.logo:hover {
     transform: scale(1.1);
 }
 
-.logo-text:hover .brand-title {
-    transform: translateX(5px);
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Menu di Navigazione */
-.main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    background-color: #FFD700;
+    color: black;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 80vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* SEZIONI GENERALI */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* SEZIONE STORIA */
+.storia {
+    background: #1e1c1c;
+    color: white;
+}
+
+.storia h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.storia p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/* SEZIONE LUOGHI DA VISITARE */
+.luoghi {
+    background: #111;
+    color: white;
+}
+
+.luoghi h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
-.main-nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.main-nav ul li a:hover {
-    color: #ff4b2b;
-}
-
-/* SEZIONE ANIMATA CON IMMAGINE DI SFONDO E CARTE IN PRIMO PIANO */
-.section {
-    position: relative;
-    padding: 60px 20px;
-    background-image: url('rodi.jpg'); /* Immagine di sfondo */
-    background-size: cover;
-    background-attachment: fixed; /* Parallasse semplice */
-    background-position: center;
-    color: #fff;
-    font-size: 1.8rem;
+.luogo-item {
+    width: 300px;
     text-align: center;
-    z-index: 1;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.section::before {
-    content: 'RadiciGarganiche';
-    position: absolute;
-    top: 0;
-    left: 0;
+.luogo-item:hover {
+    transform: scale(1.05);
+}
+
+.luogo-item img {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay leggero */
-    z-index: -1; /* Overlay dietro le carte */
+    border-radius: 10px;
 }
 
-/* STILE DELLE CARTE IN PRIMO PIANO */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    z-index: 2; /* Carte in primo piano */
-    position: relative;
+/* SEZIONE PRODOTTI TIPICI */
+.prodotti-tipici {
+    background: #0e3f2e;
+    color: white;
 }
 
-/* Stile delle carte con trasparenza */
-.card {
-    background-color: rgba(255, 255, 255, 0.8); /* Sfondo bianco con trasparenza */
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s ease; /* Aggiunge transizione al background */
+.prodotti-tipici h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
+    margin-bottom: 40px;
 }
 
-/* Effetto hover con più trasparenza */
-.card:hover {
-    background-color: rgba(255, 255, 255, 0.6); /* Aumenta la trasparenza al passaggio del mouse */
-    transform: translateY(-15px) rotate(1deg); /* Effetto hover come sollevamento */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-/* Immagini all'interno delle carte */
-.card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-/* Ingrandimento immagine al passaggio del mouse */
-.card:hover img {
-    transform: scale(1.1); /* Ingrandisce leggermente l'immagine */
-}
-
-/* Sezione Storia */
-.storia {
-    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%); /* Gradiente sfumato tra bianco e grigio chiaro */
-    padding: 10px 40px; /* Spaziatura ampia attorno al testo */
-    max-width: 900px;
-    margin: 20px auto;
-    border-left: 8px solid #ff4b2b; /* Barra decorativa colorata sul lato sinistro */
-    border-radius: 8px; /* Leggera curvatura degli angoli */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Ombra morbida e diffusa */
-    text-align: left;
-    position: relative; /* Posizionamento relativo per ulteriori decorazioni */
-}
-
-.storia {
-    background-color: #f9f9f9; /* Sfondo leggero */
-    padding: 50px 20px; /* Spaziatura interna */
-    width: 100%; /* La sezione si estende in larghezza */
-    min-height: 50vh; /* Altezza minima del 50% della finestra */
-    box-sizing: border-box; /* Assicura che il padding sia incluso nella larghezza */
-    margin: 0 auto;
-    text-align: left; /* Testo allineato a sinistra */
-}
-
-/* Stile del titolo */
-.storia h2 {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 2.5rem;
-    color: #333;
+.prodotto-item {
+    width: 300px;
     text-align: center;
+    background: #1e6038;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.prodotto-item:hover {
+    transform: scale(1.05);
+}
+
+.prodotto-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* SEZIONE CURIOSITÀ */
+.curiosita {
+    background: #222;
+    color: white;
+}
+
+.curiosita h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
     margin-bottom: 20px;
 }
 
-/* Stile del testo */
-.storia p {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 1.1rem;
+.curiosita p {
+    font-size: 1.3rem;
     line-height: 1.8;
-    color: #555;
+}
+
+/* SEZIONE RISTORO */
+.ristoro {
+    background: #0b0b0b;
+    color: white;
+}
+
+.ristoro h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
     margin-bottom: 20px;
 }
 
-
-
-/* Stile delle Carte */
-.card {
-    background-color: rgb(121, 118, 118);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.ristoro-item {
+    width: 300px;
     text-align: center;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(255, 247, 247, 0.2);
+.ristoro-item:hover {
+    transform: scale(1.05);
 }
 
-.card img {
+.ristoro-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 10px;
 }
 
-.card h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8rem;
-    margin: 15px 0;
-    color: #ffffff;
-}
-
-.card p {
-    padding: 0 15px 20px;
-    font-size: 1rem;
-    color: #f7f4f4;
-    line-height: 1.6;
-}
-
-.card .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ff4b2b;
+/* MAPPA INTERATTIVA */
+.mappa {
+    background: #1e1c1c;
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
 }
 
-.card .btn:hover {
-    background-color: #ff7f50;
+.mappa h2 {
+    font-size: 2.8rem;
+    color: #FFD700;
+    margin-bottom: 20px;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
+.map-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    background: black;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 30px;
     margin-top: 50px;
 }
 
-footer a {
-    color: #ffdd57;
-    text-decoration: none;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
 
-footer a:hover {
-    text-decoration: underline;
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .luogo-item, .prodotto-item, .ristoro-item {
+        width: 90%;
+    }
 }
