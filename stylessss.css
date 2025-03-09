@@ -83,7 +83,7 @@
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: url('missione.jpg') no-repeat center center/cover;
+    background: url('img/mare\ \(2\).jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,7 +338,7 @@ section {
 /* Sezione Evidenza - Effetto Hover */
 .evidenza {
     height: 50vh;
-    background: url('missione.jpg') no-repeat center center/cover;
+    background: url('img/campagna.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
