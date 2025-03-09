@@ -62,7 +62,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('missione.jpg') no-repeat center center/cover; /* Sostituisci con la tua immagine */
+    background: url('img/vico.jpg') no-repeat center center/cover; /* Sostituisci con la tua immagine */
 }
 
 
@@ -83,7 +83,7 @@
 /* Hero Section */
 .hero {
     height: 90vh;
-    background: url('missione.jpg') no-repeat center center/cover;
+    background: url('img/vico.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
