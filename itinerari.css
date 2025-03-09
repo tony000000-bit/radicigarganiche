@@ -51,7 +51,7 @@
 /* HERO SECTION */
 .hero {
     height: 90vh;
-    background: url('mare.jpg') no-repeat center center/cover;
+    background: url('img/architello.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
