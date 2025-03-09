@@ -306,7 +306,7 @@
 /* HERO SECTION */
 .hero {
     height: 50vh;
-    background: url('missione.jpg') no-repeat center center/cover;
+    background: url('img/sentieroforesta.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
