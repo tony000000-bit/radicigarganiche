@@ -3,102 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vico del Gargano - RadiciGarganiche</title>
-    <link rel="stylesheet" href="styleolive.css">
+    <title>Vico del Gargano - Il Borgo dell'Amore</title>
+    <link rel="stylesheet" href="vico.css">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Navbar -->
     <header class="navbar">
         <div class="container">
-            <div class="logo-text">
-                <a href="index.html" class="logo">
-                    <img src="logo.png" alt="Logo RadiciGarganiche">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="logo.png" alt="Radici Garganiche" class="logo">
                 </a>
-                <h1 class="brand-title">RadiciGarganiche</h1>
             </div>
-            <nav class="main-nav">
-                <ul>
+            <nav class="menu-container">
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#prodotti">Prodotti</a></li>
-                    <li><a href="#produttori">Produttori</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
+                    <li><a href="#">Scopri il Gargano</a></li>
+                    <li><a href="#">Esperienze</a></li>
+                    <li><a href="#">Contatti</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Sezione Storia di Vico del Gargano -->
-    <section class="card">
-        <h2>Vico del Gargano: Tradizioni e Prodotti Tipici</h2>
-        <p>
-            Vico del Gargano, uno dei borghi più belli d'Italia, è un luogo di storia, cultura e tradizioni culinarie antiche. Situato nel cuore del Parco Nazionale del Gargano, Vico è famoso per i suoi agrumi, in particolare le arance e i limoni, oltre all'olio d'oliva di alta qualità e altre prelibatezze.
-        </p>
-        <p>
-            Le tradizioni agricole di Vico si sono tramandate di generazione in generazione, mantenendo viva la produzione di prodotti locali che racchiudono i sapori autentici della terra garganica.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero" style="background: url('img/vico.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h1>Vico del Gargano</h1>
+            <p>Uno dei Borghi più belli d'Italia, tra storia, tradizioni e sapori autentici.</p>
+        </div>
     </section>
 
-    <!-- Sezione Prodotti Tipici -->
-    <section id="prodotti" class="section">
-        <h2>Prodotti Tipici di Vico del Gargano</h2>
-        <div class="grid">
-            <!-- Agrumi di Vico del Gargano -->
-            <div class="card">
-                <img src="arance.jpg" alt="Agrumi di Vico del Gargano">
-                <h3>Agrumi di Vico</h3>
-                <p>Famosi in tutta Italia per la loro dolcezza e il loro profumo, gli agrumi di Vico del Gargano sono il cuore della produzione locale. Le arance e i limoni crescono rigogliosi grazie al clima mite del Gargano.</p>
-                <a href="pagarance.html" class="btn">Degusta ora</a>
-            </div>
+    <!-- Storia di Vico del Gargano -->
+    <section class="storia">
+        <div class="container">
+            <h2>La Storia di Vico del Gargano</h2>
+            <p>Nel cuore del Parco Nazionale del Gargano, tra il verde degli uliveti e l'azzurro del mare, sorge Vico del Gargano, un borgo medievale che conserva intatta la sua anima antica. Fondato in epoca normanna, Vico è un labirinto di vicoli, archi in pietra, chiese secolari e palazzi storici, che raccontano storie di popoli, dominazioni e tradizioni tramandate nei secoli.
 
-            <!-- Olio d'Oliva di Vico -->
-            <div class="card">
-                <img src="olive.jpg" alt="Olio d'Oliva di Vico del Gargano">
-                <h3>Olio d'Oliva</h3>
-                <p>L'olio extravergine d'oliva di Vico del Gargano è rinomato per il suo sapore delicato e la sua qualità superiore. Prodotto con metodi tradizionali, questo olio è un ingrediente chiave nella cucina garganica.</p>
-                <a href="olivevico.html" class="btn">Degusta ora</a>
-            </div>
+                Ma c’è qualcosa che rende questo luogo ancora più speciale: Vico del Gargano è il "Paese dell’Amore". Un titolo che non è solo un nome, ma un'identità profonda, radicata nella cultura e nelle usanze del borgo. Qui, il 14 febbraio non è solo San Valentino, è la celebrazione di un legame indissolubile tra il santo patrono della città e il cuore della sua gente.
+                
+                Uno dei luoghi simbolo di questa tradizione è la suggestiva "Via del Bacio", un vicolo stretto e intimo, dove la leggenda narra che gli innamorati si scambiassero promesse d’amore sotto la protezione del santo. Ancora oggi, passeggiando tra queste stradine, si respira un’atmosfera unica, fatta di romanticismo, storia e autenticità.
+                
+                Ma Vico del Gargano è molto più di un borgo da cartolina. È il custode di antiche usanze, sapori autentici e tradizioni agricole secolari. Qui, tra i profumi di agrumi e ulivi secolari, la cultura contadina incontra la spiritualità, regalando a chi lo visita un'esperienza immersiva e senza tempo.</p>
+        </div>
+    </section>
 
-            <!-- Limoni di Vico -->
-            <div class="card">
-                <img src="limone.jpg" alt="Limoni di Vico del Gargano">
-                <h3>Limoni di Vico</h3>
-                <p>Oltre alle arance, i limoni di Vico sono noti per il loro sapore intenso e l'aroma fresco, perfetti per la preparazione di dolci, conserve e liquori come il limoncello.</p>
-                <a href="limonivico.html" class="btn">Degusta ora</a>
+    <!-- Luoghi da Visitare -->
+    <section class="luoghi">
+        <div class="container">
+            <h2>Luoghi da Visitare</h2>
+            <div class="grid">
+                <div class="luogo-item">
+                    <img src="img/via-del-bacio.jpg" alt="Via del Bacio">
+                    <p><strong>Via del Bacio</strong> - Il vicolo più romantico del paese, simbolo dell’amore e delle tradizioni locali.</p>
+                </div>
+                <div class="luogo-item">
+                    <img src="img/castello-vico.jpg" alt="Castello Normanno">
+                    <p><strong>Castello Normanno</strong> - Una fortezza medievale che domina il borgo e offre una vista mozzafiato sul Gargano.</p>
+                </div>
+                <div class="luogo-item">
+                    <img src="img/chiesa-vico.jpg" alt="Chiesa Matrice">
+                    <p><strong>Chiesa Matrice</strong> - Un gioiello architettonico con affreschi e dettagli barocchi.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sezione Produttori di Vico del Gargano -->
-    <section id="produttori" class="section">
-        <h2>Produttori Locali di Vico del Gargano</h2>
-        <div class="grid">
-            <!-- Produttore 1 -->
-            <div class="card">
-                <img src="img/produttore1.jpg" alt="">
-                <h3></h3>
-                <p>.</p>
-            </div>
+   <!-- Sezione Tradizioni Agricole & Prodotti Tipici -->
+<section class="prodotti-tipici">
+    <h2>Tradizioni Agricole & Prodotti Tipici</h2>
+    <p>Vico del Gargano è rinomato per la produzione di olio extravergine d'oliva, agrumi profumati e formaggi tipici, simboli della cultura gastronomica locale.</p>
+    
+    <div class="grid">
+        <div class="prodotto-item">
+            <img src="img/olivehh.jpg" alt="Olio Extravergine d'Oliva">
+            <h3>Olio Extravergine d'Oliva</h3>
+            <p>Prodotto dalle antiche cultivar del territorio, dal sapore intenso e aromatico. È l'oro liquido del Gargano, ottenuto da olive raccolte a mano e spremute a freddo.</p>
+        </div>
+        <div class="prodotto-item">
+            <img src="img/limonihh.jpg" alt="Agrumi del Gargano">
+            <h3>Agrumi del Gargano</h3>
+            <p>Arance e limoni dal profumo inconfondibile, usati in dolci e liquori tradizionali. L'arancia del Gargano IGP è un'eccellenza riconosciuta in tutta Italia.</p>
+        </div>
+        <div class="prodotto-item">
+            <img src="img/formaggi.jpg" alt="Formaggi Tipici">
+            <h3>Formaggi Tipici</h3>
+            <p>Caciocavallo podolico, ricotta e pecorino, ideali da gustare con il pane locale e accompagnati da miele o marmellate di agrumi.</p>
+        </div>
+    </div>
+</section>
 
-            <!-- Produttore 2 -->
-            <div class="card">
-                <img src="img/produttore2.jpg" alt="">
-                <h3></h3>
-                <p></p>
-            </div>
+>
 
-            <!-- Produttore 3 -->
-            <div class="card">
-                <img src="img/produttore3.jpg" alt="">
-                <h3></h3>
-                <p></p>
+    <!-- Curiosità & Eventi -->
+    <section class="curiosita">
+        <div class="container">
+            <h2>Curiosità & Eventi Locali</h2>
+            <p>Ogni anno, il 14 febbraio, Vico del Gargano si trasforma per celebrare il suo patrono con il San Valentino del Gargano, una festa unica che unisce tradizione, fede e folklore. Tra vicoli addobbati e atmosfere romantiche, si susseguono eventi culturali, spettacoli dal vivo e degustazioni di prodotti tipici, dove i protagonisti sono gli agrumi profumati e l'olio extravergine d’oliva.</p>
+        </div>
+    </section>
+
+    <!-- Dove Mangiare & Dove Dormire -->
+    <section class="ristoro">
+        <div class="container">
+            <h2>Dove Mangiare & Dove Dormire</h2>
+            <p>Scopri i migliori ristoranti e alloggi per vivere un’esperienza autentica.</p>
+            <div class="grid">
+                <div class="ristoro-item">
+                    <img src="img/ristorante-vico.jpg" alt="Ristorante">
+                    <p><strong></strong> - .</p>
+                </div>
+                <div class="ristoro-item">
+                    <img src="img/bb-vico.jpg" alt="B&B">
+                    <p><strong></strong> - .</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Mappa Interattiva -->
+    <section class="mappa">
+        <div class="container">
+            <h2>Mappa Interattiva</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11879.24284038147!2d15.955292548488345!3d41.896927820955106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1337a557955f7d4d%3A0xf152fe0226297a3f!2s71018%20Vico%20del%20Gargano%20FG!5e0!3m2!1sit!2sit!4v1741555168008!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 RadiciGarganiche| <a href="#contatti">Contattaci</a></p>
+    <footer class="footer">
+        <p>© 2025 Radici Garganiche - Tutti i diritti riservati</p>
     </footer>
 
 </body>
