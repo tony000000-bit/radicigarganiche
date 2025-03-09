@@ -28,8 +28,12 @@
 }
 .booking-section h2 {
     font-size: 3rem;
-    color: #000;
-}    
+    color: #ffffff;
+} 
+.booking-section p {
+    font-size: 1rem;
+    color: #ffffff;
+}      
 /* Navbar */
 .navbar {
     background: #111;
