@@ -3,82 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aziende Agricole del Gargano</title>
+    <title>Le Nostre Aziende e Prodotti Tipici</title>
     <link rel="stylesheet" href="SEZIONEAZIENDE.css">
 </head>
 <body>
 
-    <!-- Hero con immagine di sfondo -->
-    <header class="hero">
-        <div class="hero-overlay">
-            <h1>Aziende Agricole del Gargano</h1>
-            <p>Tradizione, passione e autenticità nei prodotti della nostra terra</p>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="logo.png" alt="Radici Garganiche" class="logo">
+                </a>
+            </div>
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Scopri il Gargano</a></li>
+                    <li><a href="#">Esperienze</a></li>
+                    <li><a href="#">Contatti</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Introduzione (spostata a destra) -->
-    <section class="intro">
-        <div class="intro-text">
-            <h2>Un Patrimonio di Sapori e Tradizioni</h2>
-            <p>
-                Il Gargano è una terra che racconta la storia attraverso i suoi prodotti agricoli. 
-                Un territorio dove la coltivazione è parte integrante della cultura e della vita quotidiana.
-            </p>
-            <p>
-                Qui nascono eccellenze come l'olio extravergine, gli agrumi profumati e i formaggi pregiati, 
-                frutto di secoli di esperienza e passione.
-            </p>
+    <!-- Hero Section -->
+    <section class="hero" style="background: url('img/campagna.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h1>Le Nostre Aziende</h1>
+            <p>Scopri le aziende agricole che custodiscono le tradizioni del Gargano.</p>
         </div>
     </section>
 
-    <!-- Sezione prodotti (nuovo stile) -->
-    <section class="prodotti">
-        <h2>Le Eccellenze del Gargano</h2>
-        <div class="prodotti-container">
-            <div class="prodotto">
-                <img src="olive.jpg" alt="Olio extravergine d'oliva">
-                <div class="prodotto-info">
-                    <h3>Olio Extravergine d'Oliva</h3>
-                    <p>Il cuore della cucina mediterranea, estratto a freddo da ulivi secolari.</p>
-                    <a href="olio.html" class="btn">Scopri di più</a>
-                </div>
-            </div>
+    <!-- Sezione Aziende -->
+    <section class="aziende">
+        <div class="container">
+            <h2>Le Aziende del Gargano</h2>
+            <p>Le aziende agricole del Gargano sono il cuore pulsante della tradizione e della qualità. 
+                Dai caseifici artigianali agli uliveti secolari, ogni azienda racconta una storia di passione e autenticità.</p>
 
-            <div class="prodotto">
-                <img src="formaggi.jpg" alt="Caciocavallo Podolico">
-                <div class="prodotto-info">
-                    <h3>Caciocavallo Podolico</h3>
-                    <p>Un formaggio dal sapore intenso, stagionato nelle grotte naturali del Gargano.</p>
-                    <a href="caciocavallo.html" class="btn">Scopri di più</a>
+            <div class="grid">
+                <div class="azienda-item">
+                    <img src="img/caseificio.jpg" alt="Caseificio del Gargano">
+                    <h3>Caseificio Antichi Sapori</h3>
+                    <p>Specializzato nella produzione di caciocavallo podolico e ricotta fresca.</p>
                 </div>
-            </div>
-
-            <div class="prodotto">
-                <img src="arance.jpg" alt="Agrumi del Gargano">
-                <div class="prodotto-info">
-                    <h3>Agrumi del Gargano</h3>
-                    <p>Arance e limoni coltivati lungo la costa, dal profumo unico e inconfondibile.</p>
-                    <a href="agrumi.html" class="btn">Scopri di più</a>
+                <div class="azienda-item">
+                    <img src="img/oliveti.jpg" alt="Frantoio Oleario">
+                    <h3>Frantoio Oleario Garganico</h3>
+                    <p>Produzione di olio extravergine d'oliva dalle varietà Ogliarola e Leccino.</p>
+                </div>
+                <div class="azienda-item">
+                    <img src="img/agrumi.jpg" alt="Azienda Agrumi del Gargano">
+                    <h3>Azienda Agricola Sole d’Agrumi</h3>
+                    <p>Coltivazione di arance e limoni Femminello IGP del Gargano.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sezione tradizione agricola -->
-    <section class="tradizione">
-        <h2>Una Tradizione Centenaria</h2>
-        <p>Da generazioni, le famiglie del Gargano tramandano i segreti della coltivazione e della produzione agricola.</p>
+    <!-- Sezione Prodotti Tipici -->
+    <section class="prodotti-gargano">
+        <h2>I Prodotti Tipici del Gargano</h2>
+        <p>Scopri i prodotti simbolo della tradizione gastronomica garganica.</p>
+
+        <div class="grid">
+            <div class="prodotto-item">
+                <img src="img/caciocavallo.jpg" alt="Caciocavallo Podolico">
+                <h3>Caciocavallo Podolico</h3>
+                <p>Formaggio a pasta filata stagionato, prodotto con latte di vacche podoliche allevate allo stato brado.</p>
+            </div>
+            <div class="prodotto-item">
+                <img src="img/pecorino.jpg" alt="Pecorino">
+                <h3>Pecorino del Gargano</h3>
+                <p>Formaggio dal sapore intenso e aromatico, perfetto con miele e confetture.</p>
+            </div>
+            <div class="prodotto-item">
+                <img src="img/formaggi.jpg" alt="Cacioricotta">
+                <h3>Cacioricotta</h3>
+                <p>Un formaggio a metà tra caciotta e ricotta, usato nella cucina tradizionale.</p>
+            </div>
+            <div class="prodotto-item">
+                <img src="img/ogliarola.jpg" alt="Oliva Ogliarola">
+                <h3>Oliva Ogliarola</h3>
+                <p>Varietà di oliva per un olio extravergine dal sapore delicato.</p>
+            </div>
+            <div class="prodotto-item">
+                <img src="img/limonihh.jpg" alt="Limone Femminello">
+                <h3>Limone Femminello</h3>
+                <p>Il limone tipico del Gargano, famoso per la sua buccia profumata.</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Sezione turismo e agricoltura -->
-    <section class="turismo">
-        <h2>Agricoltura e Turismo: Un Binomio Perfetto</h2>
-        <p>Il turismo enogastronomico sta diventando sempre più importante per il Gargano, attrarre visitatori attraverso i sapori autentici.</p>
+    <!-- Mappa Interattiva -->
+    <section class="mappa">
+        <div class="container">
+            <h2>Mappa delle Aziende</h2>
+            <p>Scopri dove trovare le migliori aziende agricole del Gargano.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11879.24284038147!2d15.955292548488345!3d41.896927820955106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1337a557955f7d4d%3A0xf152fe0226297a3f!2sGargano%2C%20Italia!5e0!3m2!1sit!2sit!4v1741555168008!5m2!1sit!2sit" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Radici Garganiche - Tutti i diritti riservati</p>
+    <footer class="footer">
+        <p>© 2025 Radici Garganiche - Tutti i diritti riservati</p>
     </footer>
 
 </body>
