@@ -123,7 +123,7 @@ p {
     margin-top: 40px;
 }
 
-.percorso-item {
+.percorso-item, .prodotto-item {
     background: #222;
     padding: 20px;
     border-radius: 10px;
@@ -133,25 +133,26 @@ p {
     transition: transform 0.3s ease-in-out;
 }
 
-.percorso-item:hover {
+.percorso-item:hover, .prodotto-item:hover {
     transform: scale(1.05);
 }
 
-.percorso-item img {
+.percorso-item img, .prodotto-item img {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
 
-.percorso-item:hover img {
+.percorso-item:hover img, .prodotto-item:hover img {
     transform: scale(1.05);
 }
 
-.percorso-item h3 {
+.percorso-item h3, .prodotto-item h3 {
     font-size: 1.6rem;
     margin-top: 10px;
     color: #FFD700;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
